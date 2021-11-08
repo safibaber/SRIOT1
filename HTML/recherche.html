@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Livres, recherche, Bibliothèque">
+		<meta name="descreption" content="Page de Recherche de la Bibliothèque de l'ESEN">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Bibliothèque de l'ESEN</title>
+	</head>
+	
+	<body>
+		<section id="section1"></section>
+		<header id="titre_principal">
+			<h2>Recherche de livres Dans la Bibliothèque</h2>
+		
+		
+			<form method="post" action="recherche.php" name="formrecherche">
+				<div class="zone1">
+					<h2>Choix des critères de Recherche</h2>
+					<label for="zrecherche">Titre du livre</label>
+					<input type="text" id="search" name="zrecherche" pattern="search"/><br/>
+				</div>
+				<div class="zone2">
+					<label for="zcategorie">Titre du livre</label>
+					<select name="categorie" id="categorie">
+						<option value="Programmation Web">Programmation Web</option>
+						<option value="Référencement Web">Référencement Web</option>
+						<option value="Commerce Electronique">Commerce Electronique</option>
+						<option value="Marketing">Marketing</option>
+						<option value="(Autre)">(Autre)</option>
+					</select>
+			    </div>
+				<div class="Bouton">
+				
+					<button type="submit" name="bt1">Chercher livres</button> 
+					<button type="reset" name="bt2">Annuler</button> 
+					
+				</div>
+			</form>
+	
+		<section id="contenu">
+			<article id="article1">
+				<h3>Bonjour</h3>
+			</article>
+		</section>
+		<footer id="pied">
+			<h4>ESEN©2018-2019</h4>
+		</footer>
+	</body>
+</html>
