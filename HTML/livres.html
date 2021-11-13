@@ -3,31 +3,60 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="keywords" content="Livres, louer, Bibliothèque">
-		<meta name="descreption" content="Livres de la Bibliothèque de l'ESEN">
-		<link rel="stylesheet" href="../css/style.css">
-		<title>Livres</title>
+		<meta name="descreption" content="Bibliothèque de l'ESEN">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="../bootstrap-3.3.7-dist/js/"></script>
+		<title id='titre_principal'>Bibliothèque de l'ESEN</title>
+		<style>
+			[class*="col-"] {
+			 background-color:beige;
+			 border: 2px solid black;
+			}
+			 .row{
+			 border: 2px solid red;
+			}
+			</style>
+			
 	</head>
 	
-	<body>
-		<header id="titre_principal">
-			<h1>Livres de la Bibliothèque de l'ESEN</h1>
-		</header>
-		<img class="logoESEN" src="../images/logo.png" alt="Logo de la Bibliothèque" title="Biblio ESEN"/>
-		<aside id="navigation">
-			<h2><a href="../index.html">Accueil</a></h2>
-			<h2><a href="livres.html">Liste des livres</a></h2>
-			<h2><a href="recherche.html">Recherche</a></h2>
-			<h2><a href="evaluation.html">Evaluation</a></h2>
-			<h2><a href="contact.html">contact</a></h2>
-			<form>
-				<input type="text" id="search" name="zrecherche" pattern="search"/>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</aside>
+	<body> 
+		<div class="container">
+			<div class="row">
+			    <div class="col" style="float:left;">
+						<img class="img-thumbnail" src="../images/logo.png" alt="Logo de la Bibliothèque" title="Biblio ESEN"/>								
+						
+				</div>	
+				<div class="col">
+					<header class="page-header">
+						<h1>Bibliothèque de l'ESEN</h1>
+					</header>
+				</div>	
+					
+			</div>	
+			<div class="row">
+				<nav class="navbar navbar-inverse">
+					
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Accueil</a></li>
+						<li><a href="html/livres.html">Liste des livres</a></li>
+						<li><a href="html/recherche.html">Recherche</a></li>
+						<li><a href="html/evaluation.html">Evaluation</a></li>
+						<li><a href="HTML/contact.html">contact</a></li>
+					
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="input-sm form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span> Chercher</button>
+					</form>
+					</ul>
+				</nav>
+			</div>
 		<section id="contenu">
 			<article id="article1" title="Liste des livres de la bibliothèque">
 				<h3>Liste des livres de la bibliothèque</h3>
-				<table>
+				<table class="table table-hover">
 					<caption>Liste des livres</caption>
 					<thead>
 						<tr>
@@ -81,5 +110,6 @@
 		<footer id="pied">
 			<h4>ESEN©2018-2019</h4>
 		</footer>
+	</div>
 	</body>
 </html>

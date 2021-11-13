@@ -4,62 +4,144 @@
 		<meta charset="utf-8">
 		<meta name="keywords" content="Livres, louer, Bibliothèque">
 		<meta name="descreption" content="Bibliothèque de l'ESEN">
-		<link rel="stylesheet" href="../css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		<title id='titre_principal'>Bibliothèque de l'ESEN</title>
+		<style>
+			[class*="col-"] {
+			 background-color:beige;
+			 border: 2px solid black;
+			}
+			 .row{
+			 border: 2px solid red;
+			}
+			</style>
+			
 	</head>
 	
-	<body class="corps">
-		<header id="titre_principal">
-			<h1>Bibliothèque de l'ESEN</h1>
-		</header>
-		<img class="logoESEN" src="../images/logo.png" alt="Logo de la Bibliothèque" title="Biblio ESEN"/>
-		<nav id="navigation">
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="html/livres.html">Liste des livres</a></li>
-				<li><a href="html/recherche.html">Recherche</a></li>
-				<li><a href="html/evaluation.html">Evaluation</a></li>
-				<li><a href="HTML/contact.html">contact</a></li>
-			
-			<form class="frecherche">
-				<input type="text" id="search" name="zrecherche" pattern="search"/>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</ul>
-		</nav>
-		<section id="contenu">
-			<article id="article1" title="Présentation de la bibliothèque">
-				<h3>Présentation de la bibliothèque</h3>
-				<p>
-					La <strong>bibliothèque de l'ESEN</strong> offre un grand nombre de livres couvrant plusieurs spécialités tels que l'informatique, le commerce électronique, le marketing, etc. Ses visiteurs sont toujours ravis par le nombre de livres et la qualité des références récentes choisies.
-					Toutes les collections de la bibliothèque sont à la disposition de tous les usagers (enseignants et étudiants) à condition de la présentation d’une fiche de consultation soigneusement remplie et de la carte de bibliothèque pour l’étudiant.
+	<body> 
+		<div class="container">
+			<div class="row">
+			    <div class="col" style="float:left;">
+						<img class="img-thumbnail" src="../images/logo.png" alt="Logo de la Bibliothèque" title="Biblio ESEN"/>								
+						
+				</div>	
+				<div class="col">
+					<header class="page-header">
+						<h1>Bibliothèque de l'ESEN</h1>
+					</header>
+				</div>	
 					
-					<blockquote>Pour plus de détails, veuillez consulter le site de l'<strong>ESEN</strong> <a href="http://esen.tn">"http://esen.tn"</a></blockquote>         
-					</p>
-			</article>
-			<article id="article2" title="Réglement De La Bibiothèque">
-				<h3>Réglement De La Bibiothèque</h3>
-				<p>
-					Voici le réglement interne de la bibilothèque de l'ESEN :
+			</div>	
+			<div class="row">
+				<nav class="navbar navbar-inverse">
+					
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Accueil</a></li>
+						<li><a href="html/livres.html">Liste des livres</a></li>
+						<li><a href="html/recherche.html">Recherche</a></li>
+						<li><a href="html/evaluation.html">Evaluation</a></li>
+						<li><a href="HTML/contact.html">contact</a></li>
+					
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="input-sm form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span> Chercher</button>
+					</form>
+					</ul>
+				</nav>
+			</div>
+			<section id="contenu">
+				<div class="row">
+					<div class="col-sm-8">
+						<article id="article1" title="Présentation de la bibliothèque">
+							<h3>Présentation de la bibliothèque</h3>
+							<p>
+								La <strong>bibliothèque de l'ESEN</strong> offre un grand nombre de livres couvrant plusieurs spécialités tels que l'informatique, le commerce électronique, le marketing, etc. Ses visiteurs sont toujours ravis par le nombre de livres et la qualité des références récentes choisies.
+								Toutes les collections de la bibliothèque sont à la disposition de tous les usagers (enseignants et étudiants) à condition de la présentation d’une fiche de consultation soigneusement remplie et de la carte de bibliothèque pour l’étudiant.
+								
+								<blockquote>Pour plus de détails, veuillez consulter le site de l'<strong>ESEN</strong> <a href="http://esen.tn">"http://esen.tn"</a></blockquote>         
+								</p>
+						</article>
+						<article id="article2" title="Réglement De La Bibiothèque">
+							<h3>Réglement De La Bibiothèque</h3>
+							<p>
+								Voici le réglement interne de la bibilothèque de l'ESEN :
 
-					<strong>La consultation sur place</strong> 
-					<ul>
-					<li>Périodiques : Ils ne sont offerts que pour une consultation sur place pour tous les usagers de la bibliothèque.</li>
-					<li>Documents audio-visuels : Les CD-ROM, les cassettes audio, les cassettes vidéo</li>
-					<li>Ouvrages de références : Dictionnaires, Encyclopédies, Lexiques, Index, Guides,…</li>
-					<li>Les projets de fin d’études</li>
-					<li>Les ouvrages en un seul exemplaire.</li>
-					</ul>
-					<strong>Le prêt à domicile:</strong>
-					<ul>
-					<li>Etudiants : Un (1) livre pour 3 jours</li>
-					<li>Enseignants : Trois (3) livres pour une (1) semaine renouvelable à condition que le (s) document (s) en plus d’un exemplaire.</li>	
-					</ul>
-				</p>
-			</article>
-		</section>
-		<footer id="pied">
-			<h4>ESEN©2018-2019</h4>
-		</footer>
+								<strong>La consultation sur place</strong> 
+								<ul>
+								<li>Périodiques : Ils ne sont offerts que pour une consultation sur place pour tous les usagers de la bibliothèque.</li>
+								<li>Documents audio-visuels : Les CD-ROM, les cassettes audio, les cassettes vidéo</li>
+								<li>Ouvrages de références : Dictionnaires, Encyclopédies, Lexiques, Index, Guides,…</li>
+								<li>Les projets de fin d’études</li>
+								<li>Les ouvrages en un seul exemplaire.</li>
+								</ul>
+								<strong>Le prêt à domicile:</strong>
+								<ul>
+								<li>Etudiants : Un (1) livre pour 3 jours</li>
+								<li>Enseignants : Trois (3) livres pour une (1) semaine renouvelable à condition que le (s) document (s) en plus d’un exemplaire.</li>	
+								</ul>
+							</p>
+						</article>
+					</div>	
+				
+					<div class="col-sm-4">
+						<aside>
+						<h3>Horaire du prêt</h3>
+						<ol>
+						<li>Consultation sur place : Du Lundi au vendredi
+						<ul>
+						<li>Matin de 9h à 12h</li>
+						<li>Après Midi 13h à 16h</li>
+						</ul>
+						</li>
+						<li>Prêt à domicile : du Lundi au Samedi
+						<ul>
+						<li>Matin 9h30 à 11h30</li>
+						<li>Après Midi 13h 30 à 15h30</li>
+						</ul>
+						</li>
+						</ol>
+						</aside>
+					</div>		
+				</div>
+			</section>
+			
+				
+				
+				<div>
+					<section id="nouveautes">
+						<div class="row">
+							<div class="col">
+								<h2>Liste des nouveautés</h2>
+							</div>
+						</div>	
+						<div class="row">	
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/1.png" alt="HTML5 et CSS3"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/2.png" alt="HTML"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/3.png" alt="HTML5 et CSS3"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/4.png" alt="HTML5 pour les web designers"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/5.png" alt="Développement d'applications Web HTML5"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/6.png" alt="JavaScript et HTML5"></div>
+						
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/7.png" alt="PHP, mySQL, Javascript"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/8.png" alt="HTML5 et Javascript"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/9.png" alt="Réussir son référencement Web"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/10.png" alt="Bootstrap 3"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/11.png" alt="PHP et MySQL"></div>
+							<div class="col-sm-3 col-xs-4 col col-md-2"><img src="images/livres/12.png" alt="PHP 7"></div>
+						</div>
+						</section>
+				</div> 
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<footer id="pied">
+					<h4 class="text-center">ESEN©2018-2019</h4>
+				</footer>
+			</div>	
+		</div>
 	</body>
 </html>
