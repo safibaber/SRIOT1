@@ -6,3 +6,143 @@ td,th
 {
 border: 1px blue solid;
 }
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Pacifico&display=swap');
+.corps
+{
+    font-family: 'Belleza', sans-serif;
+    color: #181818;
+    font-size: 1.2em; 
+    width: 90%;
+    vertical-align:middle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1,h2,h3
+{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2pt;
+    text-transform: capitalize;
+
+}
+h1
+{
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    border: 1px outset #006699;
+    text-align: center;
+    color: #0099cc;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #003366;
+
+}
+h2
+{
+font-weight:bolder;
+font-size: 180%;
+}
+p
+{
+    text-align: justify;
+}
+#titre_principal
+{
+    display: inline;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.logoESEN
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    
+}
+table
+{ 
+    border-collapse: collapse;
+    width: 70%;
+    align-content: center;
+    margin:auto;
+}
+tr + td
+{
+    text-align: center;
+}
+
+nav,footer
+{
+    text-align: center;
+    border-top: solid 2px #002D40;
+    border-bottom: solid 1px #002D40;
+    margin: 50px;
+    
+    
+}
+tr,td
+{
+    border: solid 1px #9BBCDD;
+    
+}
+nav ul
+{
+    list-style-type: none;
+} 
+nav ul li
+{
+    display: inline;
+    
+    
+}
+.frecherche
+{
+    display:inline;
+}
+a:link
+{
+    color: #9BBCDD;
+    text-decoration: none;
+    margin-right: 40px;
+}
+a:visited
+{
+    color:#002D40;
+
+}
+a:hover
+{
+    font-size:larger;
+    text-decoration: overline underline;
+
+}
+button
+{ 
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: 002D40 ;
+    color:honeydew;
+    border: inset 2px gray;
+    border-radius: 5px;
+}
+.coteAcote
+{
+    display:inline;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-right: 20px;
+
+}
+@media screen and (max-width: 767px) {
+    nav ul li 
+    {
+        display: block;
+        text-align: left;
+    }
+    h1,h2,h3 
+    {
+        font-size: 12px;
+        border: none;
+    }
+    
+}
